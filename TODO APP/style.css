@@ -1,0 +1,163 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 20px;
+    padding: 0;
+    background-color: #edf7fc;
+    height: 100vh;
+}
+
+nav {
+    padding: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #edf7fc;
+    color: #333333;
+    font-size: large;
+    
+}
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    padding-right: 10px;
+    font-weight:bold;
+}
+
+nav a:hover {
+   background-color: #b8b6a833;
+   font-size: larger;
+   
+}
+nav img{
+    max-height: 50px;
+    vertical-align: middle;
+}
+.login-button{
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #e44232;
+    color: white;
+    border: none;
+    font-size: large;
+}
+.login-button:hover{
+    background-color: #de483a;
+    font-size: larger;
+}
+
+.content{
+    width: 700px;
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+    margin: auto;
+}
+.content a{
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #e44232;
+    color: white;
+    border: none;
+    font-size: large;
+    text-decoration: none;
+}
+
+.content a:hover{
+    background-color: #de483a;
+}
+
+#todo-container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out;
+    margin: auto;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-item:hover {
+    background-color: #f9f9f9;
+}
+
+.task-text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.add-task-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+#new-task {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#add-task-btn {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+#add-task-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Animation for the todo container */
+@keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}

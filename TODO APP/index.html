@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="./HomePage.html"><img src="../IMAGES/Black White Simple Monochrome Initial Name Logo.png" alt=""></a>
+    <a href="./HomePage.html">Home</a>
+    <a href="#">Features</a>
+    <a href="#">For Teams</a>
+    <a href="#">Resources</a>
+    <a href="#">Pricing</a>
+    <a href="./Login.html" class="login-button">login</a>
+</nav>
+
+  <div id="todo-container">
+    <h2 style="text-align: center;">Add Your Taks Here</h2>
+
+    <ul id="todo-list"></ul>
+
+    <div class="add-task-container">
+      <input type="text" id="new-task" placeholder="Add a new task" class="task-text">
+      <button id="add-task-btn" onclick="addTask()">Add Task</button>
+    </div>
+  </div>
+
+
+  <script src="script.js">
+
+  </script>
+
+</body>
+</html>
